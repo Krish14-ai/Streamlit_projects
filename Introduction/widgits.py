@@ -7,9 +7,15 @@ cream = st.checkbox("Cream")
 sugar = st.checkbox("Sugar")
 choco = st.checkbox("Chocolate")
 
-st.write(sugar, choco)
+
 if st.button("Make Coffee"):
-    st.write(f"Added {cream}")
+    if cream :
+        st.write("Added Cream")
+    if sugar :
+        st.write("Added Sugar")
+    if choco :
+        st.write("Added Choco")
+
     st.write("Coffee is ready")
     st.success("bon appétit !")
 
