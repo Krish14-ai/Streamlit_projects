@@ -14,6 +14,7 @@ if type == "Custom":
     sugar = st.checkbox("Sugar")
     choco = st.checkbox("Choco Powder")
 
+    
 
     if st.button("Make Coffee"):
         if milk :
@@ -26,6 +27,8 @@ if type == "Custom":
             st.write("Added Chocolate")
 
         st.write("Coffee is ready")
-        st.success("bon appétit !")
+        st.success("Bon Appétit !")
 
-
+else : 
+    st.write(f"Your {type} is ready")
+    st.success("Bon Appétit")
