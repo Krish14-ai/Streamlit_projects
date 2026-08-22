@@ -15,7 +15,6 @@ if st.button("Convert"):
     if response.status_code == 200:
         data = response.json()
 
-
         rate = data["rates"][target_currency]
         converted_val = rate* amount
 
