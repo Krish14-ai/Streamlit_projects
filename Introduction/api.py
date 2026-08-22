@@ -4,6 +4,7 @@ import requests
 st.title("Live Currency Coverter")
 
 first_currency = st.selectbox("Convert From : ", ["INR", "USD", "EUR", "GBP"])
+
 amount= st.number_input(f"Enter the amount in {first_currency}", min_value  = 1)
 
 target_currency = st.selectbox("Convert to : ", ["USD", "EUR", "GBP"])
@@ -16,7 +17,7 @@ if st.button("Convert"):
         data = response.json()
 
         rate = data["rates"][target_currency]
-        converted_val = rate* amount
+        converted_val = rate * amount / data["rates"][first_currency]
 
         st.success(f"{amount} {first_currency} = {converted_val:.2f} {target_currency}")
         
