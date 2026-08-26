@@ -8,7 +8,10 @@ authors = [
 ]
 requires-python = ">=3.14"
 dependencies = [
+    "fastapi>=0.141.1",
+    "scikit-learn>=1.9.0",
     "streamlit>=1.62.0",
+    "uvicorn>=0.52.4",
 ]
 
 [project.scripts]
