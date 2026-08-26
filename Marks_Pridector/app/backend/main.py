@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 import uvicorn
-from model.predictor import train
+from Streamlit_projects.Marks_Pridector.app.model.predictor import train
 
 app = FastAPI()
 
