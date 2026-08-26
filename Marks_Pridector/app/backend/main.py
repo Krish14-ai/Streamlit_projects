@@ -10,6 +10,6 @@ def first_page():
 
 @app.get("/model")
 def model_status():
-    train
+    get_data()
     
     
