@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 import uvicorn
-from model import model
+from model.predictor import train
 
 app = FastAPI()
 
@@ -10,5 +10,6 @@ def first_page():
 
 @app.get("/model")
 def model_status():
+    train
     
     
