@@ -1,0 +1,6 @@
+import predictor
+import numpy as np
+
+tst = np.array([[22,99.5,26.1,1,1]])
+
+print(predictor.train(tst))

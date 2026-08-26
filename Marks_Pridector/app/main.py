@@ -1,5 +1,7 @@
 from fastapi import FastAPI
 import uvicorn
+from model import model
+
 app = FastAPI()
 
 @app.get("/")
@@ -8,4 +10,5 @@ def first_page():
 
 @app.get("/model")
 def model_status():
-    return {"messege" : "hello world"}
+    
+    
