@@ -1,5 +1,9 @@
 import streamlit as st 
 
-st.title("Hi")
-st.header("Hello Master ")
+st.title("Spam Classifier")
+st.header("Check Your Emails Here")
+
+input = st.text_input("Please Paste your Email Here")
+
+
 
