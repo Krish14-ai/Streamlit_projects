@@ -4,7 +4,7 @@ import numpy as np
 import sys, os
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from model.predictor import train
+from Streamlit_projects.Marks_Pridector.app.model.predictor import train
 
 
 st.title("Welcome to the Placement Predictor")
