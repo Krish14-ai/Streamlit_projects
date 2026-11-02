@@ -13,3 +13,10 @@ Install the dependencies from the repository root (`Streamlit_projects/`):
 uv sync
 ```
 
+## Run the apps
+
+Run these commands from the repository root:
+
+```powershell
+uv run streamlit run Projects/Spam_Classifier/app/main.py
+```
